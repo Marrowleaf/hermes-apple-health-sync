@@ -1,33 +1,9 @@
-# 🔧 hermes-apple-health-sync
+# ---
 
-A [Hermes Agent](https://hermes-agent.nousresearch.com/) skill for **apple-health-sync** (health category).
+--- name: apple-health-sync description: Import Apple Health export data (ZIP with XML/CSV), parse steps, weight, workouts, heart rate, and sleep, sync to Obsidian daily notes and the fitness-nutritio
 
-## Installation
-
-```bash
-cd ~/.hermes/skills/health
-git clone https://github.com/Marrowleaf/hermes-apple-health-sync.git apple-health-sync
-```
-
-## Usage
-
-Once installed, this skill is automatically detected by Hermes Agent. Load it with:
-
-```
-skill_view(name="apple-health-sync")
-```
-
-## Structure
-
-- `SKILL.md` — Full documentation with commands, examples, and pitfalls
-- `references/` — Reference materials (if any)
-- `scripts/` — Utility scripts (if any)
-- `templates/` — Template files (if any)
+Part of the [Hermes Agent](https://github.com/Marrowleaf/hermes-agent) skill ecosystem.
 
 ## License
 
-MIT — see [LICENSE](LICENSE)
-
----
-
-Built with ❤️ by [James Durrant](https://github.com/Marrowleaf) and [Hermes Agent](https://hermes-agent.nousresearch.com/)
+MIT License - Copyright (c) 2026 James Durrant
