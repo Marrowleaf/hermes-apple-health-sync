@@ -1,51 +1,49 @@
-# Apple Health Sync
+# Fitness & Nutrition
 
-> Import and sync Apple Health data from iPhone exports into Obsidian with trend analysis and health dashboards.
+> Track workouts, nutrition, and body metrics with comprehensive analytics and Obsidian integration.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Marrowleaf/hermes-apple-health-sync)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Marrowleaf/hermes-fitness-nutrition)
 
 ## Features
 
-- Import Apple Health export ZIP files (export.zip)
-- Parse step count, heart rate, sleep analysis, workouts, and more
-- Daily, weekly, and monthly health dashboards in Obsidian
-- Trend analysis across health metrics over time
-- XML and CSV parsing support for Apple Health exports
-- Automatic data normalization and deduplication
-- Integration with fitness-nutrition and habits skills
-- Health metric correlations (e.g., steps vs. heart rate)
-- Configurable metric types and date ranges
+- Workout logging with exercise sets, reps, and weights
+- Nutrition tracking with macro and calorie counting
+- Body metrics tracking (weight, measurements, body fat)
+- Progressive overload tracking and PR detection
+- Weekly and monthly fitness reports with trend analysis
+- Exercise library with muscle group categorization
+- Meal logging with automatic macro calculation
+- Integration with habits skill for streak tracking
+- Obsidian-integrated data storage with PARA structure
 
 ## Installation
 
 ```bash
-hermes skills install health/apple-health-sync
+hermes skills install health/fitness-nutrition
 ```
 
-Or manually clone into `~/.hermes/skills/health/apple-health-sync/`.
+Or manually clone into `~/.hermes/skills/health/fitness-nutrition/`.
 
 ## Usage
 
 ```
-apple-health import /path/to/export.zip
-apple-health summary --week
-apple-health dashboard --month
-apple-health trend steps --days 90
-apple-health compare --metric heart-rate --period1 jan --period2 feb
+fitness log "bench press 3x10 @ 80kg"
+fitness log "ran 5km in 25 minutes"
+nutrition log "chicken breast 200g, rice 150g"
+nutrition log "oats 80g with milk and banana"
+fitness report week
+nutrition summary --today
+fitness pr bench-press
 ```
 
 ## Configuration
 
-- `APPLE_HEALTH_EXPORT_PATH`: Default path for Apple Health export ZIP
-- Store parsed data in Obsidian at `~/obsidian-vault/3-Resources/health/`
-- Configure which metrics to track and dashboard layout in `config.md`
+Store data in your Obsidian vault at `~/obsidian-vault/3-Resources/fitness/`. Configure exercise library, nutrition goals, and body metrics targets in `config.md`.
 
 ## Requirements
 
 - Hermes Agent v0.12+
-- Python 3.8+ (for XML/CSV parsing)
-- Obsidian vault (for data storage and dashboards)
-- Apple Health export file from iPhone
+- Obsidian vault (for data storage)
 
 ## License
 
